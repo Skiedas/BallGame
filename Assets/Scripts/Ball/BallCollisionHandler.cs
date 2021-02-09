@@ -19,11 +19,6 @@ public class BallCollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //if(collision.gameObject.TryGetComponent(out Barrier barrier))
-        //{
-        //    _gameOverPanel.SetActive(true);
-        //}
-
         if (collision.gameObject.TryGetComponent(out Ground ground))
         {
             _ballJump.SetGrounded(true);
